@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AgendaConstraintActivity">
+
+    <ImageView
+        android:id="@+id/imgIcoPersona"
+        android:layout_width="235dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/InfoImagen"
+        app:layout_constraintBottom_toTopOf="@+id/guiMitad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/imagenpersona"
+        tools:ignore="UnknownId" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guiMitad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <EditText
+        android:id="@+id/edtNombreC"
+        android:layout_width="180dp"
+        android:layout_height="39dp"
+        android:hint="Nombre:"
+        app:layout_constraintBottom_toTopOf="@+id/edtTelefonoC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guiMitad"
+        app:layout_constraintVertical_bias="0.5"
+        android:inputType="textPersonName"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/edtTelefonoC"
+        android:layout_width="180dp"
+        android:layout_height="39dp"
+        android:hint="Teléfono:"
+        app:layout_constraintBottom_toTopOf="@+id/edtCorreo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtNombreC"
+        android:inputType="phone"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/edtCorreo"
+        android:layout_width="180dp"
+        android:layout_height="39dp"
+        android:hint="Correo:"
+        app:layout_constraintBottom_toBottomOf="@+id/guiOchenta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtTelefonoC"
+        android:inputType="textEmailAddress"
+        tools:ignore="MissingConstraints" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guiOchenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <ImageView
+        android:id="@+id/imgTelefono"
+        android:layout_width="39dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/imgCorreo"
+        app:layout_constraintEnd_toStartOf="@+id/edtTelefonoC"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgNombre"
+        app:srcCompat="@android:drawable/ic_menu_call" />
+
+    <ImageView
+        android:id="@+id/imgCorreo"
+        android:layout_width="39dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/guiOchenta"
+        app:layout_constraintEnd_toStartOf="@+id/edtCorreo"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgTelefono"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+
+    <ImageView
+        android:id="@+id/imgNombre"
+        android:layout_width="39dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/imgTelefono"
+        app:layout_constraintEnd_toStartOf="@+id/edtNombreC"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guiMitad"
+        app:srcCompat="@android:drawable/ic_dialog_info" />
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnCancel"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guiOchenta" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnOk"
+        app:layout_constraintTop_toTopOf="@+id/guiOchenta" />
+</android.support.constraint.ConstraintLayout>

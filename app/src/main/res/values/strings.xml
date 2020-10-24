@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Practica2</string>
+    <string name="NuevoContacto">Nuevo Contacto</string>
+    <string name="Nombre">Nombre:</string>
+    <string name="Apellido">Apellidos:</string>
+    <string name="Email">E-Mail:</string>
+    <string name="Telefono">Teléfono</string>
+    <string name="Notas">Notas:</string>
+    <string name="InfoImagen">Imagen de Contacto</string>
+    <string name="InfoComida">Imagen de una Hamburguesa</string>
+    <string name="TextoDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris imperdiet lectus justo, sit amet faucibus tortor consequat eu. Vestibulum eleifend quam nec sapien.</string>
+    <string name="Receta">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris imperdiet lectus justo, sit amet faucibus tortor consequat eu. Vestibulum eleifend quam nec sapien aliquam lacinia. Nunc quis rhoncus ex, non pharetra magna. Sed porttitor leo in tempus pretium. Aliquam porttitor rhoncus leo in fermentum. Donec nec justo sodales orci viverra aliquet. Cras hendrerit, felis ut facilisis fermentum, odio lectus bibendum sapien, et euismod ligula mi in mauris. Duis a nulla maximus, sollicitudin lectus a, molestie enim. Phasellus varius magna dolor, dignissim mollis libero malesuada et.
+
+In vulputate auctor malesuada. Nunc vel interdum urna. Quisque eget lectus elit. Donec volutpat maximus nunc, vitae tincidunt enim rutrum ut. Ut cursus, mi quis fermentum porta, risus libero mollis nisi, sed congue massa lacus sit amet magna. Vivamus in velit nec nibh tempor sodales. Fusce rhoncus urna vitae diam placerat finibus. Duis ut lorem id sem semper varius id fringilla magna.
+
+        Sed ultrices nunc iaculis, gravida mauris ac, auctor eros. Maecenas fermentum felis et vulputate vestibulum. Proin luctus nulla justo, sed varius purus gravida nec. Morbi sapien dui, pulvinar nec pulvinar et, vulputate et tellus. Proin at eros ullamcorper, maximus nulla non, gravida ligula.
+</string>
 </resources>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecetaActivity">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guiVeinticinco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guiCincuenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guiMedio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@id/guiCincuenta"
+        app:layout_constraintGuide_percent="0.5"
+        app:layout_constraintTop_toTopOf="@id/guiVeinticinco" />
+
+    <ImageView
+        android:id="@+id/imgComida"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/InfoComida"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@id/guiVeinticinco"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/hamburguesa" />
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:text="Hamburguesa Completa"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/guiVeinticinco"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.034"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.16000003"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtAutor"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:fontFamily="cursive"
+        android:text="Tomás Soler Linares"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/guiVeinticinco"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.028"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitulo"
+        app:layout_constraintVertical_bias="0.2"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtDescripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descripción"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/guiMedio"
+        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guiVeinticinco"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtDescText"
+        android:layout_width="171dp"
+        android:layout_height="0dp"
+        android:text="@string/TextoDesc"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/guiCincuenta"
+        app:layout_constraintEnd_toStartOf="@+id/guiMedio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDescripcion"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtIngredientes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingredientes"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintStart_toStartOf="@+id/guiMedio"
+        app:layout_constraintTop_toTopOf="@+id/guiVeinticinco"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtIngDesc"
+        android:layout_width="173dp"
+        android:layout_height="0dp"
+        android:text="@string/TextoDesc"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/guiCincuenta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guiMedio"
+        app:layout_constraintTop_toBottomOf="@+id/txtIngredientes"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtReceta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Receta"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guiCincuenta"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtRecetaDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="@string/Receta"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.562"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtReceta"
+        tools:ignore="MissingConstraints" />
+
+    <RatingBar
+        android:id="@+id/rtbPuntuacion"
+        style="@android:style/Widget.DeviceDefault.Light.RatingBar"
+        android:layout_width="244dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:numStars="4"
+        app:layout_constraintBottom_toTopOf="@+id/guiVeinticinco"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAutor"
+        app:layout_constraintVertical_bias="1.0" />
+
+</android.support.constraint.ConstraintLayout>
