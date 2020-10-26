@@ -26,14 +26,14 @@ public class AgendaConstraintActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_agenda_constraint);
-
+        //Obtenemos una referencia a los controles de la interfaz
         edtNombre = (EditText)findViewById(R.id.edtNombreC);
         edtTelefonoC = (EditText)findViewById(R.id.edtTelefonoC);
         edtCorreo = (EditText)findViewById(R.id.edtCorreo);
 
         btnOk = (Button)findViewById(R.id.btnOk);
         btnCancel = (Button)findViewById(R.id.btnCancel);
-
+        //Implementamos el evento al hacer click en el botón Ok.
         btnOk.setOnClickListener(new View.OnClickListener() {
             @Override
             /**
@@ -48,7 +48,7 @@ public class AgendaConstraintActivity extends AppCompatActivity {
                 toast.show();
             }
         });
-
+        //Implementamos el evento al hacer click en el botón Cancel.
         btnCancel.setOnClickListener(new View.OnClickListener() {
             @Override
             /**

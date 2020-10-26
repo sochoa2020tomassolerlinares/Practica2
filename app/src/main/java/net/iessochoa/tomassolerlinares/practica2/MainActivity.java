@@ -23,10 +23,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //Obtenemos una referencia a los botones de la interfaz.
         btnAgenda = (Button)findViewById(R.id.btnAgenda);
         btnAgendaConstraint = (Button)findViewById(R.id.btnAgendaConstraint);
         btnReceta = (Button)findViewById(R.id.btnReceta);
 
+        //Implementamos el evento al hacer click en el botón Agenda.
         btnAgenda.setOnClickListener(new View.OnClickListener() {
             @Override
             /**
@@ -38,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
+        //Implementamos el evento al hacer click en el botón Agenda-Constraint
         btnAgendaConstraint.setOnClickListener(new View.OnClickListener() {
             @Override
             /**
@@ -51,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //Implementamos el evento al hacer click en el botón Receta
         btnReceta.setOnClickListener(new View.OnClickListener() {
             @Override
             /**

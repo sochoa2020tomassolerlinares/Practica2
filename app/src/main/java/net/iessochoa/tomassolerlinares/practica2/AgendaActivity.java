@@ -29,7 +29,7 @@ public class AgendaActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_agenda);
-
+        //Obtenemos una referencia a los controles de la interfaz
         txtNuevoContacto = (TextView) findViewById(R.id.txtNuevoContacto);
 
         edtNombre = (EditText)findViewById(R.id.edtNombreC);
@@ -41,7 +41,7 @@ public class AgendaActivity extends AppCompatActivity {
         btnAceptar = (Button)findViewById(R.id.btnAceptar);
         btnReiniciar = (Button)findViewById(R.id.btnReiniciar);
         btnSalir = (Button)findViewById(R.id.btnSalir);
-
+        //Implementamos el evento al hacer click en el botón Aceptar.
         btnAceptar.setOnClickListener(new View.OnClickListener(){
             @Override
             /**
@@ -51,7 +51,7 @@ public class AgendaActivity extends AppCompatActivity {
                 txtNuevoContacto.setText(edtNombre.getText() + " "+edtApellido.getText());
             }
         });
-
+        //Implementamos el evento al hacer click en el botón Reiniciar.
         btnReiniciar.setOnClickListener(new View.OnClickListener() {
             @Override
             /**
@@ -66,7 +66,7 @@ public class AgendaActivity extends AppCompatActivity {
                 edtNotas.setText("");
             }
         });
-
+        //Implementamos el evento al hacer click en el botón Salir.
         btnSalir.setOnClickListener(new View.OnClickListener() {
             @Override
             /**
