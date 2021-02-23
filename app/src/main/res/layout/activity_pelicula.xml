@@ -120,8 +120,8 @@
 
     <ImageView
         android:id="@+id/ivRating"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
         app:layout_constraintEnd_toStartOf="@+id/ivCalification"
@@ -131,8 +131,8 @@
 
     <ImageView
         android:id="@+id/ivCalification"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:layout_marginTop="32dp"
         app:layout_constraintEnd_toStartOf="@+id/ivRottenTomato"
         app:layout_constraintStart_toEndOf="@+id/ivRating"
@@ -141,8 +141,8 @@
 
     <ImageView
         android:id="@+id/ivRottenTomato"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:layout_marginTop="32dp"
         app:layout_constraintEnd_toStartOf="@+id/ivSimilar"
         app:layout_constraintStart_toEndOf="@+id/ivCalification"
@@ -151,8 +151,8 @@
 
     <ImageView
         android:id="@+id/ivSimilar"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toStartOf="@+id/guideline4"
