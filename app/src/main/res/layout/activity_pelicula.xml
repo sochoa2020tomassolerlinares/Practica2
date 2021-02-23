@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PeliculaActivity">
+
+    <ImageView
+        android:id="@+id/ivBanner"
+        android:layout_width="546dp"
+        android:layout_height="329dp"
+        android:layout_marginBottom="108dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/banner"
+        tools:ignore="MissingConstraints" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <ImageView
+        android:id="@+id/ivCartel"
+        android:layout_width="126dp"
+        android:layout_height="184dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="152dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/verticalimage" />
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="181dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/title"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/ivCartel"
+        app:layout_constraintTop_toBottomOf="@+id/ivBanner" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="16dp" />
+
+    <ImageButton
+        android:id="@+id/ibAddBookmark"
+        android:layout_width="49dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="#FFFFFF"
+        android:contentDescription="TODO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvTitulo"
+        app:layout_constraintTop_toBottomOf="@+id/ivBanner"
+        app:srcCompat="@drawable/ic_bookmark_add_foreground"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/tvInfoFilm"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/filmInfo"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintStart_toEndOf="@+id/ivCartel"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitulo" />
+
+    <Button
+        android:id="@+id/ibRent"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#FA1639"
+        android:text="@string/btRent"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/ibBuy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <Button
+        android:id="@+id/ibBuy"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="#FA1639"
+        android:text="@string/btBuy"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ibRent"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <ImageView
+        android:id="@+id/ivRating"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toStartOf="@+id/ivCalification"
+        app:layout_constraintStart_toStartOf="@id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/ibRent"
+        app:srcCompat="@drawable/octagono" />
+
+    <ImageView
+        android:id="@+id/ivCalification"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toStartOf="@+id/ivRottenTomato"
+        app:layout_constraintStart_toEndOf="@+id/ivRating"
+        app:layout_constraintTop_toBottomOf="@+id/ibRent"
+        app:srcCompat="@drawable/edad" />
+
+    <ImageView
+        android:id="@+id/ivRottenTomato"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toStartOf="@+id/ivSimilar"
+        app:layout_constraintStart_toEndOf="@+id/ivCalification"
+        app:layout_constraintTop_toBottomOf="@+id/ibBuy"
+        app:srcCompat="@drawable/tomato" />
+
+    <ImageView
+        android:id="@+id/ivSimilar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintStart_toEndOf="@+id/ivRottenTomato"
+        app:layout_constraintTop_toBottomOf="@+id/ibBuy"
+        app:srcCompat="@drawable/similar" />
+
+    <TextView
+        android:id="@+id/tvRatings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/ratings"
+        app:layout_constraintEnd_toEndOf="@+id/ivRating"
+        app:layout_constraintStart_toStartOf="@id/ivRating"
+        app:layout_constraintTop_toBottomOf="@+id/ivRating" />
+
+    <TextView
+        android:id="@+id/tvCalification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/calification"
+        app:layout_constraintEnd_toEndOf="@+id/ivCalification"
+        app:layout_constraintStart_toStartOf="@+id/ivCalification"
+        app:layout_constraintTop_toBottomOf="@+id/ivCalification" />
+
+    <TextView
+        android:id="@+id/tvRottenTomato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/rottenTomato"
+        app:layout_constraintEnd_toEndOf="@+id/ivRottenTomato"
+        app:layout_constraintStart_toStartOf="@+id/ivRottenTomato"
+        app:layout_constraintTop_toBottomOf="@+id/ivRottenTomato" />
+
+    <TextView
+        android:id="@+id/tvSimilar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/similar"
+        app:layout_constraintEnd_toEndOf="@id/ivSimilar"
+        app:layout_constraintStart_toStartOf="@+id/ivSimilar"
+        app:layout_constraintTop_toBottomOf="@+id/ivSimilar" />
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="347dp"
+        android:layout_height="135dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/filmDescription"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@id/guideline4"
+        app:layout_constraintStart_toStartOf="@id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/tvCalification" />
+
+</android.support.constraint.ConstraintLayout>

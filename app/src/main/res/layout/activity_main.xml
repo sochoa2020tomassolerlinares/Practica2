@@ -30,4 +30,10 @@
         android:layout_height="wrap_content"
         android:text="RECETA" />
 
+    <Button
+        android:id="@+id/btnPelicula"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btPelicula" />
+
 </LinearLayout>

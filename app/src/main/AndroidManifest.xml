@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Practica2">
-        <activity android:name=".RecetaActivity"></activity>
+        <activity android:name=".PeliculaActivity"></activity>
+        <activity android:name=".RecetaActivity" />
         <activity android:name=".AgendaConstraintActivity" />
         <activity android:name=".AgendaActivity" />
         <activity android:name=".MainActivity">

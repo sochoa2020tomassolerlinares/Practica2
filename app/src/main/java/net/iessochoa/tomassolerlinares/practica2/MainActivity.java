@@ -14,6 +14,8 @@ public class MainActivity extends AppCompatActivity {
     private Button btnAgenda;
     private Button btnAgendaConstraint;
     private Button btnReceta;
+    //Opcional 2
+    private Button btnPelicula;
 
     /**
      * Método encargado de generar los datos cuando se inicia la aplicación.
@@ -28,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
         btnAgenda = (Button)findViewById(R.id.btnAgenda);
         btnAgendaConstraint = (Button)findViewById(R.id.btnAgendaConstraint);
         btnReceta = (Button)findViewById(R.id.btnReceta);
+        //Opcional 2
+        btnPelicula = (Button)findViewById(R.id.btnPelicula);
 
         //Implementamos el evento al hacer click en el botón Agenda.
         btnAgenda.setOnClickListener(new View.OnClickListener() {
@@ -64,6 +68,13 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, RecetaActivity.class);
                 startActivity(intent);
             }
+        });
+
+        //Opcional 2
+        //Implementamos el evento al hacer click en el botón Película
+        btnPelicula.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, PeliculaActivity.class);
+            startActivity(intent);
         });
     }
 }

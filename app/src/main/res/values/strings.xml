@@ -15,4 +15,14 @@ In vulputate auctor malesuada. Nunc vel interdum urna. Quisque eget lectus elit.
 
         Sed ultrices nunc iaculis, gravida mauris ac, auctor eros. Maecenas fermentum felis et vulputate vestibulum. Proin luctus nulla justo, sed varius purus gravida nec. Morbi sapien dui, pulvinar nec pulvinar et, vulputate et tellus. Proin at eros ullamcorper, maximus nulla non, gravida ligula.
 </string>
+    <string name="btPelicula">PELÍCULA</string>
+    <string name="title">Spider-Man into the Spider-Verse</string>
+    <string name="filmInfo">December 2018 +7 116 minutes</string>
+    <string name="ratings">1M Ratings</string>
+    <string name="calification">+7 Years</string>
+    <string name="rottenTomato">97%</string>
+    <string name="similar">Similar</string>
+    <string name="filmDescription">Phil Lord y Chris Miller, las mentes creativas detrás de La LEGO Película e Infiltrados en Clase, reúnen su extraordinario talento para crear una nueva y diferente visión del universo Spider-Man. Con revolucionario estilo visual nunca visto, Spider-Man: Un Nuevo Universo presenta a Miles Morales, un adolescente de Brooklyn que se convierte en el nuevo hombre-araña y descubre las ilimitadas posibilidades del multiuniverso donde más de uno puede llevar la máscara.</string>
+    <string name="btBuy">BUY FROM 8,99€</string>
+    <string name="btRent">RENT FROM 3,99€</string>
 </resources>
